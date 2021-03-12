@@ -25,7 +25,6 @@ kdb set user:/dir_and_file_at_once/leaf "leaf node"
 
 #TODO: report bad behavoiur: trying to mount a json file (without specifying 'json' as the last parameter) causes the whole of system:/ to be unusable (Error: C03100)
 
-
 #test the dir namespace
 
 #need to be created from the leafes to the top
@@ -39,7 +38,6 @@ kdb set dir:/dirkey "Key from /root/dirkeys/b"
 
 cd /root/dirkeys
 kdb set dir:/dirkey "Key from /root/dirkeys"
-
 
 #create dummy processes (that expose different values in dir:)
 cd /root/dirkeys/a
